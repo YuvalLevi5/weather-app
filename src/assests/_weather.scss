@@ -1,0 +1,53 @@
+.weather-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, .45);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+    backdrop-filter: blur(15px);
+}
+
+.days-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    .weather-card {
+        background: $clr-bg-variant;
+        border: 1px solid transparent;
+        border-radius: 1rem;
+        padding:1rem;
+        text-align: center;
+        transition: $transition;
+        &:hover {
+            background: transparent;
+            border-color: $clr-primary-variant;
+        }
+
+        img {
+            width: 50%;
+            margin: auto;
+        }
+
+        .temp {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .days-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+}
+
+@media screen and (max-width: 670px) {
+    .days-list {
+        grid-template-columns: repeat(1, 1fr);
+    }    
+}

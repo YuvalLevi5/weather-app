@@ -1,0 +1,23 @@
+.input-container {
+    display: flex;
+    margin-bottom: 2rem;
+
+    .form-input {
+        margin: auto;
+    }
+
+    input {
+        border-radius: 0.5rem;
+        border: 2px solid $clr-primary-variant;
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        font-size: 1.2rem;
+        margin: 0 auto;
+        padding: 1.5rem 2rem;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        display: block;
+        transition: all 0.3s;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+}
